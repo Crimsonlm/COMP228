@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice_rolling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dice rolling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7F-x4-iW0">
+                                <rect key="frame" x="135.5" y="102" width="143" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I just rolled two dice.What number  do you think I rolled" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtx-LM-uvu">
+                                <rect key="frame" x="78.5" y="152" width="257.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0i-Ys-kgV">
+                                <rect key="frame" x="185.5" y="280" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S26-VU-HA6"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceimage" id="cPv-VY-4TF">
+                                <rect key="frame" x="45" y="471" width="325" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="301" id="BEM-di-4ju"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bsb-qp-hm7">
+                                <rect key="frame" x="157" y="223" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="uYb-xL-W1O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tax-5A-xCN">
+                                <rect key="frame" x="207" y="343" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cPv-VY-4TF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="1o6-lX-600"/>
+                            <constraint firstItem="p7F-x4-iW0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="78Z-aU-FSH"/>
+                            <constraint firstItem="p7F-x4-iW0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FKH-BN-8cK"/>
+                            <constraint firstItem="Gtx-LM-uvu" firstAttribute="top" secondItem="p7F-x4-iW0" secondAttribute="bottom" constant="14" id="Hl1-Dz-i7N"/>
+                            <constraint firstItem="p0i-Ys-kgV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jfr-Ah-RDj"/>
+                            <constraint firstItem="Tax-5A-xCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QQP-e6-eGl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bsb-qp-hm7" secondAttribute="trailing" constant="157" id="SmG-ED-0rd"/>
+                            <constraint firstItem="Bsb-qp-hm7" firstAttribute="top" secondItem="Gtx-LM-uvu" secondAttribute="bottom" constant="30" id="bDR-9t-tug"/>
+                            <constraint firstItem="Tax-5A-xCN" firstAttribute="top" secondItem="p0i-Ys-kgV" secondAttribute="bottom" constant="33" id="ciR-q8-w6f"/>
+                            <constraint firstItem="Gtx-LM-uvu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eyj-jK-2ts"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p0i-Ys-kgV" secondAttribute="trailing" constant="185.5" id="gfc-le-api"/>
+                            <constraint firstItem="p0i-Ys-kgV" firstAttribute="top" secondItem="Bsb-qp-hm7" secondAttribute="bottom" constant="23" id="hjY-F2-QCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cPv-VY-4TF" secondAttribute="bottom" constant="90" id="nyn-PF-BN7"/>
+                            <constraint firstItem="Bsb-qp-hm7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="u0d-S5-0w3"/>
+                            <constraint firstItem="p0i-Ys-kgV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185.5" id="xk1-hp-krG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputbox" destination="Bsb-qp-hm7" id="pbb-ZG-xM3"/>
+                        <outlet property="outputbox" destination="Tax-5A-xCN" id="uNI-PC-86z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diceimage" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
